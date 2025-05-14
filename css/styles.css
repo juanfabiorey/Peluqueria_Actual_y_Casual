@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+}
+
+header h1 span.small {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400; /* Peso más ligero para "PELUQUERÍA Y BARBERÍA" */
+}
+
+header h1 span.large {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-weight: 700; /* Peso más grueso para "ACTUAL Y CASUAL" */
+}
+
+/* Main Section */
+main {
+    position: relative;
+    flex: 1; /* Ocupa el espacio disponible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 400px; /* Evita que colapse en pantallas pequeñas */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%) blur(2px) contrast(120%); /* Desenfoque del 10% + brillo al 50% */
+    z-index: -1;
+}
+
+/*.noise-overlay {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");*/
+/*    opacity: 0.15; !* Ajusta la intensidad del ruido *!*/
+/*    z-index: -1;*/
+/*}*/
+
+.construction-box {
+    background-color: rgba(255, 255, 255, 0.65); /* Fondo blanco con 65% de opacidad */
+    color: #000; /* Texto negro para contraste */
+    padding: clamp(30px, 6vw, 60px); /* Más padding alrededor del texto */
+    border-radius: 20px;
+    max-width: 90%;
+    width: 700px; /* Más grande en desktop */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.construction-box h2 {
+    font-size: clamp(1.8rem, 5vw, 2.5rem); /* Tamaño más grande */
+    font-weight: 900; /* Peso más pesado, como "black" */
+    margin-bottom: 20px;
+}
+
+.construction-box p {
+    font-size: clamp(1rem, 3vw, 1.2rem); /* Más grande */
+    font-weight: 700; /* Negrita */
+    margin-bottom: 20px;
+    text-transform: none;
+}
+
+.construction-box ul {
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 40px;
+    text-transform: none;
+}
+
+.construction-box ul li {
+    margin-bottom: 10px;
+    font-size: clamp(0.85rem, 2.5vw, 0.95rem);
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+    text-transform: none;
+    padding: 0 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 768px) {
+    header {
+        height: 150px; /* Reducir altura en móviles */
+        padding: 0 3%;
+    }
+
+    header h1 span.small {
+        font-size: 1rem;
+        font-weight: 400; /* Mantener peso ligero */
+    }
+
+    header h1 span.large {
+        font-size: 1.8rem;
+    }
+
+    .construction-box {
+        padding: 30px; /* Menos padding en tablets */
+        width: 600px; /* Tamaño estándar para tablets */
+        max-width: 95%;
+    }
+
+    .construction-box h2 {
+        font-size: 1.8rem; /* Ligeramente más grande */
+        font-weight: 900; /* Mantener peso pesado */
+    }
+
+    .construction-box p {
+        font-size: 1rem; /* Ajustado para tablets */
+        font-weight: 700; /* Mantener negrita */
+    }
+
+    .construction-box ul {
+        margin-left: 20px;
+    }
+
+    main {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 120px;
+    }
+
+    header h1 span.small {
+        font-size: 0.9rem;
+        font-weight: 400; /* Mantener peso ligero */
+    }
+
+    header h1 span.large {
+        font-size: 1.5rem;
+    }
+
+    .construction-box {
+        padding: 20px; /* Aún menos padding en móviles pequeños */
+        width: 100%; /* Ocupa casi todo el ancho en móviles */
+        max-width: 95%;
+    }
+
+    .construction-box h2 {
+        font-size: 1.5rem; /* Ajustado para móviles */
+        font-weight: 900; /* Mantener peso pesado */
+    }
+
+    .construction-box p {
+        font-size: 0.9rem; /* Ajustado para móviles */
+        font-weight: 700; /* Mantener negrita */
+    }
+
+    .construction-box ul li {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        height: 60px;
+        font-size: 0.75rem;
+    }
+}
