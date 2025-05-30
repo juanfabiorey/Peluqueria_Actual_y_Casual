@@ -3,45 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peluquería y Barbería - Actual y Casual</title>
-  <!-- Google Fonts: Orbitron y Open Sans -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Open+Sans:wght@400;700;900&display=swap" rel="stylesheet">
-  <!-- Estilos CSS -->
+  <title>Peluquería y Barbería</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- Header -->
 <header>
-  <h1>
-    <span class="small">Peluquería y Barbería</span>
-    <span class="large">Actual y Casual</span>
-  </h1>
-</header>
-
-<!-- Main Section -->
-<main>
-  <!-- Imagen local desde la carpeta img -->
-  <img src="img/background.jpg" alt="Barbería" class="background-image">
-  <div class="noise-overlay"></div> <!-- Capa para el efecto de ruido -->
-  <div class="construction-box">
-    <h2>Sitio en construcción</h2> <!-- Sin ":" -->
-    <p>Estamos trabajando para mejorar su experiencia como cliente. En el nuevo sitio usted podrá:</p>
-    <ul>
-      <li>Reservar turnos de forma interactiva</li>
-      <li>Conocer nuestros servicios en cortes, color, peinados, y cuidado de la barba</li>
-      <li>Enterarse de novedades y promos</li>
-      <li>Ver nuestro catálogo de productos para el cuidado del cabello y la barba</li>
-      <li>...y mucho más</li>
-    </ul>
+  <div class="header-left-container">
+    <p class="header-text-1">PELUQUERÍA Y BARBERÍA</p>
+    <p class="header-text-2">ACTUAL Y CASUAL</p>
   </div>
-</main>
-
-<!-- Footer -->
+  <div class="header-right-container">
+    <p class="header-right-text-1">Benito Machachado 187</p>
+    <p class="header-right-text-2">2983-550942</p>
+    <div class="social-links-container">
+      <a href="https://www.instagram.com/peluqueria.actualycasual"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+        <path d="M19.104 4.29148C20.4565 4.29552 21.7526 4.83462 22.709 5.79103C23.6654 6.74744 24.2045 8.04345 24.2085 9.39602V19.604C24.2045 20.9565 23.6654 22.2526 22.709 23.209C21.7526 24.1654 20.4565 24.7045 19.104 24.7085H8.89602C7.54345 24.7045 6.24744 24.1654 5.29103 23.209C4.33462 22.2526 3.79552 20.9565 3.79148 19.604V9.39602C3.79552 8.04345 4.33462 6.74744 5.29103 5.79103C6.24744 4.83462 7.54345 4.29552 8.89602 4.29148H19.104ZM19.104 2.25H8.89602C4.96562 2.25 1.75 5.46562 1.75 9.39602V19.604C1.75 23.5344 4.96562 26.75 8.89602 26.75H19.104C23.0344 26.75 26.25 23.5344 26.25 19.604V9.39602C26.25 5.46562 23.0344 2.25 19.104 2.25Z" fill="white"/>
+        <path d="M20.6352 9.39602C20.3324 9.39602 20.0363 9.30621 19.7845 9.13795C19.5327 8.9697 19.3364 8.73055 19.2205 8.45075C19.1046 8.17095 19.0743 7.86307 19.1334 7.56603C19.1925 7.269 19.3383 6.99616 19.5525 6.78201C19.7666 6.56786 20.0395 6.42202 20.3365 6.36294C20.6335 6.30385 20.9414 6.33418 21.2212 6.45008C21.501 6.56597 21.7402 6.76224 21.9084 7.01405C22.0767 7.26586 22.1665 7.56191 22.1665 7.86477C22.1669 8.06597 22.1276 8.26529 22.0508 8.45126C21.974 8.63724 21.8612 8.80621 21.719 8.94849C21.5767 9.09076 21.4077 9.20354 21.2217 9.28034C21.0358 9.35714 20.8364 9.39645 20.6352 9.39602ZM14 10.4165C14.8076 10.4165 15.5972 10.656 16.2687 11.1047C16.9402 11.5534 17.4636 12.1911 17.7727 12.9373C18.0818 13.6835 18.1626 14.5045 18.0051 15.2967C17.8475 16.0888 17.4586 16.8164 16.8875 17.3875C16.3164 17.9586 15.5888 18.3475 14.7967 18.5051C14.0045 18.6626 13.1835 18.5817 12.4373 18.2727C11.6911 17.9636 11.0534 17.4402 10.6047 16.7687C10.156 16.0971 9.91649 15.3076 9.91649 14.5C9.91764 13.4173 10.3482 12.3794 11.1138 11.6138C11.8794 10.8482 12.9173 10.4176 14 10.4165ZM14 8.375C12.7886 8.375 11.6044 8.73422 10.5971 9.40725C9.58988 10.0803 8.80483 11.0369 8.34124 12.1561C7.87765 13.2753 7.75636 14.5068 7.99269 15.6949C8.22903 16.8831 8.81238 17.9744 9.66897 18.831C10.5256 19.6876 11.6169 20.271 12.8051 20.5073C13.9932 20.7436 15.2247 20.6223 16.3439 20.1588C17.4631 19.6952 18.4197 18.9101 19.0928 17.9029C19.7658 16.8956 20.125 15.7114 20.125 14.5C20.125 12.8755 19.4797 11.3176 18.331 10.169C17.1824 9.02031 15.6245 8.375 14 8.375Z" fill="white"/>
+      </svg></a>
+      <a href="https://www.facebook.com/profile.php?id=100063618728416"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.25 14.5738C26.25 7.80898 20.7648 2.32383 14 2.32383C7.23516 2.32383 1.75 7.80898 1.75 14.5738C1.75 20.6879 6.22891 25.7558 12.0859 26.6756V18.1159H8.97477V14.5738H12.0859V11.875C12.0859 8.80539 13.9152 7.10844 16.713 7.10844C18.0534 7.10844 19.4556 7.34797 19.4556 7.34797V10.3629H17.9102C16.3893 10.3629 15.9135 11.3068 15.9135 12.277V14.5738H19.3107L18.7682 18.1159H15.9141V26.6767C21.7711 25.7574 26.25 20.6895 26.25 14.5738Z" fill="white"/>
+      </svg></a>
+      <a href="https://x.com/DavidDiazpelu"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+        <path d="M27.125 6.48828C26.1403 6.91613 25.0985 7.19801 24.0324 7.325C25.1528 6.66896 25.9953 5.62672 26.402 4.39375C25.3428 5.01314 24.1859 5.44773 22.9808 5.67891C22.4733 5.14709 21.863 4.72401 21.187 4.43539C20.511 4.14677 19.7833 3.99864 19.0482 4C16.0721 4 13.6637 6.37344 13.6637 9.29922C13.6616 9.70618 13.7082 10.1119 13.8026 10.5078C11.6685 10.4078 9.5788 9.86337 7.66718 8.90944C5.75555 7.95551 4.06409 6.61306 2.70102 4.96797C2.22281 5.77413 1.96992 6.69393 1.96875 7.63125C1.96875 9.46875 2.92742 11.093 4.375 12.0445C3.51735 12.0242 2.67728 11.7972 1.92609 11.3828V11.4484C1.92609 14.0187 3.78547 16.157 6.24641 16.6438C5.78363 16.7671 5.30675 16.8296 4.82781 16.8297C4.48797 16.8303 4.14891 16.7973 3.81555 16.7312C4.49969 18.8367 6.49086 20.368 8.84953 20.4117C6.93294 21.8888 4.57987 22.6871 2.16016 22.6813C1.73065 22.6806 1.30154 22.655 0.875 22.6047C3.33658 24.1765 6.19798 25.008 9.11859 25C19.0367 25 24.4552 16.9227 24.4552 9.91719C24.4552 9.6875 24.4491 9.45781 24.4382 9.23359C25.4899 8.4855 26.3997 7.55584 27.125 6.48828Z" fill="white"/>
+      </svg></a>
+      <a href="https://www.tiktok.com/@user5444608827676"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+        <path d="M22.5417 6.98922C22.3645 6.89765 22.192 6.79726 22.0249 6.68844C21.5389 6.36712 21.0932 5.98852 20.6976 5.56078C19.7078 4.4282 19.3381 3.27922 19.2019 2.47477H19.2074C19.0936 1.80703 19.1407 1.375 19.1478 1.375H14.6393V18.8083C14.6393 19.0423 14.6393 19.2737 14.6295 19.5023C14.6295 19.5307 14.6268 19.557 14.6251 19.5876C14.6251 19.6002 14.6251 19.6133 14.6224 19.6264V19.6363C14.5749 20.2618 14.3744 20.866 14.0385 21.3958C13.7026 21.9256 13.2417 22.3648 12.6963 22.6747C12.1278 22.9981 11.4849 23.1677 10.8309 23.1669C8.73036 23.1669 7.02794 21.4541 7.02794 19.3388C7.02794 17.2234 8.73036 15.5106 10.8309 15.5106C11.2285 15.5103 11.6237 15.5728 12.0018 15.696L12.0072 11.1055C10.8595 10.9573 9.69359 11.0485 8.58291 11.3734C7.47223 11.6983 6.44095 12.2499 5.55411 12.9934C4.77704 13.6685 4.12375 14.4741 3.62365 15.3739C3.43333 15.702 2.71529 17.0205 2.62833 19.1605C2.57365 20.3751 2.93841 21.6334 3.11232 22.1535V22.1645C3.22169 22.4707 3.64552 23.5158 4.33622 24.3968C4.89318 25.1035 5.55121 25.7243 6.28911 26.2392V26.2283L6.30005 26.2392C8.48263 27.7223 10.9026 27.625 10.9026 27.625C11.3215 27.608 12.7247 27.625 14.3183 26.8698C16.0858 26.0325 17.0921 24.7851 17.0921 24.7851C17.7349 24.0397 18.2461 23.1903 18.6036 22.2733C19.0116 21.2009 19.1478 19.9146 19.1478 19.4005V10.1518C19.2025 10.1846 19.9309 10.6664 19.9309 10.6664C19.9309 10.6664 20.9804 11.3391 22.6177 11.7771C23.7924 12.0888 25.3751 12.1545 25.3751 12.1545V7.67883C24.8205 7.73898 23.6945 7.56398 22.5417 6.98922Z" fill="white"/>
+      </svg></a>
+    </div>
+  </div>
+</header>
+<section class="content">
+  <div class="content-main">
+    <div class="content-left-container">
+      <p class="content-text-1">Sitio en construcción</p>
+      <p class="content-text-2">Estamos trabajando para mejorar su experiencia como cliente</p>
+      <p class="content-text-3">En el nuevo sitio usted podrá:</p>
+      <ul>
+        <li>Reservar turnos de forma interactiva</li>
+        <li>Conocer nuestros servicios en cortes, color, peinados, y cuidado de la barba</li>
+        <li>Enterarse de novedades y promos</li>
+        <li>Ver nuestro catálogo de productos para el cuidado del cabello y la barba</li>
+        <li>...y mucho más</li>
+      </ul>
+    </div>
+    <div class="content-right-container">
+      <div class="image-1"></div>
+      <div class="image-2"></div>
+      <div class="image-3"></div>
+    </div>
+  </div>
+</section>
 <footer>
-  <p>2025 © Sitio creado por <a href="https://juanfabiorey.dev">JUANFABIOREY.DEV</a></p>
+  <p>2025 © <a href="https://pymedigital.com.ar">pymedigital.com.ar</a></p>
 </footer>
-
-<!-- Script JavaScript -->
-<script src="js/main.js"></script>
 </body>
 </html>
